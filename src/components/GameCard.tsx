@@ -10,7 +10,7 @@ interface GameCardProps {
 
 const GameCard = ({ game }: GameCardProps) => {
     return (
-        <Card.Root>
+        <Card.Root width='300px'>
             <Image src={getCroppedImageUrl(game.background_image)} alt={game.name} />
             <Card.Body>
                 <Heading as="h3" size="md">{game.name}</Heading>
